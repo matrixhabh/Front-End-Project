@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body::-webkit-scrollbar {
+            display: none; /* To hide the scrollbar */
+        }
+    </style> 
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <style>
+        .grid>div {
+            grid-row: var(--r);
+            grid-column: var(--c);
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full bg-zinc-900">
+        <div class="grid grid-cols-8 grid-rows-20 gap-2 overflow-hidden">
+            <div class="elem col-span-1 row-span-1" style="--r: 1; --c: 3;"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball on court"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 1; --c: 7;"><img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball hoop"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 2; --c: 2;"><img src="https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball player dunking"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 2; --c: 6;"><img src="https://images.unsplash.com/photo-1627627256672-027a4613d028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball shoes"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 3; --c: 4;"><img src="https://images.unsplash.com/photo-1518063319789-7217e6706b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball court lines"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 3; --c: 8;"><img src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball net"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 4; --c: 1;"><img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball hoop at sunset"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 4; --c: 4;"><img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball court from above"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 5; --c: 2;"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball close-up"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 5; --c: 6;"><img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball hoop silhouette"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 6; --c: 3;"><img src="https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball player shooting"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 6; --c: 7;"><img src="https://images.unsplash.com/photo-1627627256672-027a4613d028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball and shoes"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 7; --c: 5;"><img src="https://images.unsplash.com/photo-1518063319789-7217e6706b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball court markings"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 7; --c: 8;"><img src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball net close-up"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 8; --c: 1;"><img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball hoop at night"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 8; --c: 4;"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball texture"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 9; --c: 2;"><img src="https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball player dribbling"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 9; --c: 6;"><img src="https://images.unsplash.com/photo-1627627256672-027a4613d028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball gear"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 10; --c: 3;"><img src="https://images.unsplash.com/photo-1518063319789-7217e6706b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball court lines close-up"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 10; --c: 7;"><img src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Basketball net swish"></div>
+        </div>
+    <div class="fixed inset-0 flex flex-col items-center justify-center bg-opacity-50 text-white">
+        <h1 class="text-8xl uppercase mb-4">Rakuzan
+        <sup>&reg;</sup>
+        </h1>
+        <h2 class="text-4xl">並外れたファッション</h2>
+    </div>
+    <div class="w-full h-screen bg-gray-300 flex items-center justify-center mx-auto py-96 relative z-[999] text-center py-16">
+        <p class="text-black text-5xl w-3/4 leading-[3.6rem] font-regular font-family: roc-grotesk, sans-serif;">
+            Rakuzan is more than just a basketball team; it's a symbol of excellence and precision. Known for their unparalleled skill and strategic gameplay, Rakuzan has dominated the high school basketball scene for years. Our brand embodies the same spirit of superiority and elegance that the team brings to the court.<br> Just as Rakuzan players strive for perfection in every move.<br> Experience the power of Rakuzan - on and off the court<sup>&reg;</sup>
+        </p>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
